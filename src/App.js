@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import Game from './Components/Game';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='h-screen bg-[#2E4053] text-white'>
+    <div className="grid place-items-center md:pt-32 pt-20 ">
+      <h1 className='text-5xl  text-[#007bff]'>Tic Tac Toe</h1>
+      <Game />
+    </div>
     </div>
   );
 }
